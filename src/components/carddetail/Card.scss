@@ -1,0 +1,179 @@
+@import '@/styles/ColorList.scss';
+@import '@/styles/Font-Mixins.scss' .hiddencard {
+  &[data-size='S'] {
+    width: 343px;
+    height: 209px;
+  }
+  &[data-size='M'] {
+    width: 704px;
+    height: 302px;
+  }
+  &[data-size='L'] {
+    width: 1140px;
+    height: 302px;
+  }
+}
+.card {
+  border: 1px;
+  background: white;
+  border: 1px solid Grayscale-200;
+
+  &[data-size='S'] {
+    margin-top: 19px;
+    width: 343px;
+    height: 190px;
+    border-radius: 12px;
+  }
+  &[data-size='M'] {
+    margin-top: 42px;
+    width: 704px;
+    height: 260px;
+    border-radius: 16px;
+  }
+  &[data-size='L'] {
+    margin-top: 42px;
+    width: 1140px;
+    height: 260px;
+    border-radius: 16px;
+  }
+}
+.cardImage {
+  box-shadow: 0px 2px 20px 0px #0000000a;
+  &[data-size='S'] {
+    margin: 51px 86px 0px 100px;
+    width: 58px;
+    height: 209px;
+    left: 20px;
+  }
+  &[data-size='M'] {
+    margin: -42px 60px 0px 60px;
+    width: 84px;
+    height: 302px;
+    left: 60px;
+  }
+  &[data-size='L'] {
+    width: 58px;
+    height: 209px;
+    //top: 93px;
+    left: 100px;
+  }
+}
+.wine {
+  &[data-size='S'] {
+    width: 200px;
+    height: 127.5px;
+    margin-top: 33px;
+    margin-bottom: 29.5px;
+  }
+  &[data-size='M'] {
+    width: 300px;
+    height: 168px;
+    margin-top: 52px;
+    margin-bottom: 40px;
+  }
+  &[data-size='L'] {
+    width: 300px;
+    height: 168px;
+    margin-top: 52px;
+    margin-bottom: 40px;
+  }
+}
+.wineName {
+  &[data-size='S'] {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 48px;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.87px;
+    text-align: left;
+    background: $Grayscale-400;
+  }
+  &[data-size='M'] {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 72px;
+    font-family: Pretendard;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35.8px;
+    text-align: left;
+    background: $Grayscale-400;
+  }
+  &[data-size='L'] {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 72px;
+    font-family: Pretendard;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35.8px;
+    text-align: left;
+    background: $Grayscale-400;
+  }
+}
+.wineDesc {
+  color: $Grayscale-300;
+  &[data-size='S'] {
+    width: 173px;
+    height: 24px;
+    @include font-settings(14, regular, 24);
+    text-align: left;
+  }
+  &[data-size='Group63'] {
+    width: 198px;
+    height: 26px;
+    @include font-settings(16, regular, 26);
+    text-align: left;
+  }
+  &[data-size='L'] {
+    width: 198px;
+    height: 26px;
+    @include font-settings(16, regular, 26);
+    text-align: left;
+  }
+}
+.winePrice {
+  background: $Primary-Purple-10;
+  color: $Primary-Purple-100;
+  &[data-size='S'] {
+    width: 86px;
+    height: 36px;
+    padding: 6px 10px 6px 10px;
+    border-radius: 10px;
+    @include font-settings(14, bold, 24);
+    text-align: center;
+  }
+  &[data-size='M'] {
+    width: Fixed (114px) px;
+    height: Fixed (37px) px;
+    top: 225px;
+    left: 204px;
+    padding: 8px 15px 8px 15px;
+    gap: 10px;
+    border-radius: 12px 0px 0px 0px;
+    opacity: 0px;
+    //styleName: pretendard/2lg-18px-bold;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+  }
+  &[data-size='L'] {
+    width: Fixed (114px) px;
+    height: Fixed (37px) px;
+    top: 225px;
+    left: 244px;
+    padding: 8px 15px 8px 15px;
+    gap: 10px;
+    border-radius: 12px;
+    //styleName: pretendard/2lg-18px-bold;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+  }
+}
